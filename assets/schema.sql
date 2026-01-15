@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS workspace (
     name TEXT NOT NULL UNIQUE CHECK(LENGTH(TRIM(name)) > 0),
     branch TEXT UNIQUE,
     description TEXT,
-    creation TEXT DEFAULT DATETIME("now")
+    creation TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE IF NOT EXISTS file_collection (
