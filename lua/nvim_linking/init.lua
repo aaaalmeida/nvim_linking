@@ -1,11 +1,10 @@
--- NVim >= 0.10 
 local M = {}
 
 function M.setup()
-    require("nvim_linking.db").create_projects_dir()
+	local a = "teste1"
+--	require("nvim_linking.db").initialize_project(a)
+	print("deu certo")
 end
-
-M.setup()
 
 return M
 

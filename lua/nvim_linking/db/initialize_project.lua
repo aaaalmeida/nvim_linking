@@ -1,4 +1,0 @@
-function()
-    vim.system({})
-end
-
